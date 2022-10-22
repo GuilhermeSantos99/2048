@@ -1,0 +1,55 @@
+.checkboxToggle {
+    transition: background 0.2s linear;
+    opacity: 0;
+
+}
+
+.labelToggle {
+    background-color: #776e65;
+    border-radius: 30px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 3px;
+    position: relative;
+
+    height: 20px;
+    width: 50px;
+
+    top: 23px;
+    left: 90px;
+
+    transform: scale(1.5);
+}
+
+.labelToggle .ballToggle {
+    background-color: #faf8ef;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translate(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkboxToggle:checked + .labelToggle .ballToggle {
+    transform: translateX(30px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+body.dark {
+    background: #232c35;
+}

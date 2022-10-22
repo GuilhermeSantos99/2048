@@ -5,6 +5,7 @@
   <title>2048 Game by MigPlayer6032</title>
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/dark_mode.css">
   <meta name="theme-color" content="#776e65">
   <link rel="shortcut icon" href="assets/img/favicon.png">
   <link rel="manifest" href="pwamanifest.json">
@@ -45,14 +46,29 @@
   <div class="container">
     <div class="heading">
       <h1 class="title">2048</h1>
+
+
+
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
+
+        <!-- Adicionar botão aqui -->
+        <input type="checkbox" class="checkboxToggle" id="chk">
+        <label class="labelToggle "for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ballToggle"></div>
+        </label>
+        <!-- Final do botão -->
+
       </div>
     </div>
     
     <div class="above-game">
-      <p class="game-intro">Junte-se aos números e chegue ao bloco <strong>2048</strong>!</p>
+      <p class="game-intro">Junte-se aos números e chegue ao bloco <strong>2048</strong>!</p>     
+
+      
       <a class="restart-button">+ Novo jogo</a>
     </div>
     
@@ -120,6 +136,10 @@
   <script src="assets/js/local_storage_manager.js"></script>
   <script src="assets/js/game_manager.js"></script>
   <script src="assets/js/application.js"></script>
+
+  <!-- Script utilizado no botão do dark mode -->
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+  <script src="assets/js/dark_mode.js"></script>
   
 </body>
 </html>
