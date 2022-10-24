@@ -1,11 +1,9 @@
 .checkboxToggle {
-    transition: background 0.2s linear;
     opacity: 0;
-
 }
 
 .labelToggle {
-    background-color: #776e65;
+    background-color: #8f7a66;
     border-radius: 30px;
     cursor: pointer;
 
@@ -18,8 +16,8 @@
     height: 20px;
     width: 50px;
 
-    top: 23px;
-    left: 90px;
+    margin-top: 10%;
+    margin-left: 80px;
 
     transform: scale(1.5);
 }
@@ -48,8 +46,4 @@
 
 .fa-sun {
     color: #f39c12;
-}
-
-body.dark {
-    background: #232c35;
 }
